@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('mahasiswa');
+// });
+
+Route::get('/', 'PagesController@home');
+Route::get('/about', 'PagesController@about');
